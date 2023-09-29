@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Petplus Animal Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container is used to wrap everything -->
+    <div id="container">
+        <!-- Website Brand -->
+        <header class="addMarginLR">
+            <h1>Petplus Animal Adoption</h1>
+        </header>
+        <!-- Main Navigation -->
+        <nav class="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main class="addMarginLR">
+
+            <h2>Contact With The Following Form</h2>
+            <img src="images/contact.jpg" id="main_img" alt="Corgi" width="500px">
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>User Personal Information</legend>
+                    <div>
+                        <label>Full Name</label> <br>
+                        <input type="text" name="full_name">
+                    </div>
+
+                    <div>
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </div>
+
+                    <div>
+                        <label>How should we contact you?</label>
+
+                        <select name="contact_method" id="contactMethod">
+                            <option value="none">Select an option</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                        <div id="contactInput"></div>
+                    </div>
+                    <div>
+                        <label>Which animal are you adopting today?</label>
+                        <select name="contact_method">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="rabbit">Rabbit</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Please describe your reason for adoption.</label>
+                        <textarea cols="40" rows="5"></textarea>
+                    </div>
+
+
+                    <input type="submit" value="Submit For Review">
+                    <p>We will notify you the decision in 3 to 5 business days.</p>
+                </fieldset>
+            </form>
+
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="addMarginLR">&copy; Copyright 2023</footer>
+    </div>
+    <!-- End Container -->
+
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
